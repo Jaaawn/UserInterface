@@ -58,41 +58,51 @@ body {
  
 /* Navigation Bar */
 .nav-bar {
-    background-color: #0F3F3F;
-    display: flex;
-    justify-content: space-around;
-    padding: 10px 0;
+  background-color: #F9F7F0;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
 }
- 
+
 .nav-bar a,
 .dropbtn {
-    color: white;
-    cursor: pointer;
-    padding: 8px 12px;
-    text-decoration: none;
+  color: black; /* Change text color to black */
+  cursor: pointer;
+  padding: 8px 12px;
+  text-decoration: none;
+  background-color: #F9F7F0; /* Set initial background color */
+  border: none; 
 }
- 
+
+/* Add hover effect for .nav-bar a and .dropbtn */
+.nav-bar a:hover,
+.dropbtn:hover {
+  color: white; /* Change text color to white on hover */
+  background-color: #EEE6D1; /* Change background color to #EEE6D1 on hover */
+}
+
 .dropdown {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
- 
+
 .dropdown-content {
-    background-color: white;
-    display: none;
-    position: absolute;
-    min-width: 160px;
+  background-color: white;
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  border: none; 
 }
- 
+
 .dropdown-content a {
-    color: black;
-    display: block;
-    padding: 8px;
-    text-decoration: none;
+  color: black;
+  display: block;
+  padding: 8px;
+  text-decoration: none;
 }
- 
+
 .dropdown:hover .dropdown-content {
-    display: block;
+  display: block;
 }
  
 /* Carousel and Buttons */
@@ -422,4 +432,68 @@ div.social {
     grid-template-columns: 1fr;
   }
 
+}
+
+/* ----------Fantasy.html starts here---------- */
+
+.product-filter {
+  display: flex; 
+}
+
+.product-filter h1{
+  flex-grow: 1;
+  padding: 2%;
+  font-size: 40px;
+}
+
+.sort{
+  display: flex;
+  padding: 2%;
+  font-size: 20px;
+}
+
+.collection-sort{
+  display: flex;
+  flex-direction: column;
+}
+
+.products{
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+.product-card{
+  padding: 2%;
+  flex-grow: 1;
+  flex-basis: 16%;
+  
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.product-image img {
+  max-width: 100%;
+}
+
+.product-info{
+  margin-top: auto;
+}
+
+@media (max-width: 920px) {
+  .product-card {
+    flex: 1 21%;
+  }
+  /* Select the first two */
+.products .product-card:first-child, 
+.products .product-card:nth-child(2) {
+  flex: 2 46%;
+}
+}
+
+@media (max-width: 600px) {
+  .product-card {
+    flex: 1 46%;
+  }
 }
