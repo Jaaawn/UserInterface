@@ -40,13 +40,28 @@ body {
  
 .search-and-cart {
     display: flex;
+    align-items: center;
 }
- 
+
+.search-container {
+  position: relative;
+  flex-grow: 1;
+}
+
 .search-bar {
-    border: 1px solid #ccc;
-    padding: 8px;
+  width: 100%;
+  padding-right: 40px; /* Adjust the padding to accommodate the image size */
+  box-sizing: border-box;
 }
  
+.search-icon {
+  position: absolute;
+    right: 8px; /* Adjust this value to set the distance from the right side of the search bar */
+    height: 20px; /* Adjust the height to match your image size */
+    width: auto;
+    cursor: pointer;
+}
+
 .view-cart {
     background-color: #0F3F3F;
     border: none;
