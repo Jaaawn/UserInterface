@@ -14,8 +14,12 @@
   <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
-      <!-- comment -->
+
+
+      <!-- link to the java -->
+      <script src="script.js"></script>
  
+      <link rel="icon" href="./images/favicon.ico">
 
 
 </head>
@@ -103,32 +107,73 @@
         <a href="fantasy.html">Contact Us</a>
         </div>
     </nav>
+    <br> <br>
 
-    <div class="container">
+    
 
     <!-- Carousel and Buttons -->
-    <div class="carousel-and-buttons">
-        <img src="carousel-placeholder.png" alt="Carousel Image" class="carousel">
-
-        
-        <div class="carousel-buttons">
-            <button class="bestsellers">Bestsellers</button> 
-            <button class="new-releases">New Releases</button> 
-            <button class="sales">Sales</button>
+    <div class="carousel-container">
+      <!-- Slideshow container -->
+      <div class="slideshow-wrapper">
+      <div class="slideshow-container">
+        <!-- images with number -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="./images/fake ad 1.jpg" style="width:100%">
         </div>
+    
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="./images/fake ad 2.jpg" style="width:100%">
+        </div>
+    
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="./images/fake ad 3.jpg" style="width:100%">
+        </div>
+    
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+    
+            <!-- The dots/circles -->
+      <div class="dots-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+  </div>
     </div>
-
-    <!-- Product Listings -->
-    <div class="main-product-listing">
-        <!-- Add your main product listing code here -->
+      <!-- Buttons -->
+      <div class="buttons-container">
+        <button class="bigbutton">Bestsellers & <br> Top 100</button> <br> <br>
+        <button class="bigbutton">New <br> Releases</button> <br> <br>
+        <button class="bigbutton">Sales & <br> Promotions</button>
+      </div>
+    </div>
+    
+      <!-- Product Listings -->
+      <div class="book-collection">
+      <div class="main-product-listing">
+        <h1>Ian Flemming Hardcover Collection</h1>
     </div>
     <div class="small-product-listings">
-        <!-- Add your small product listings code here -->
+        <p>view all</p>
     </div>
-
-    <!-- Long Rectangle Image -->
-    <img src="rectangle-placeholder.png" alt="Rectangle Image" class="rectangle-image">
 </div>
+
+<div class="banner-container">
+    <img src="./images/reccs-banner.png" alt="Reading Reccomendations" class="rectangle-image">
+    <div class="overlay">
+      <h1>Reading Recommendations</h1>
+    <p>We love matching keen readers <br>
+      with great books. Ask here for <br>
+       your reading recommendation <br>
+        from one of our expert staff!</p>
+    <button>Ask Here</button>
+    </div>
+  </div>
     <!-- Coming Soon Section -->
     <div class="coming-soon-section">
         <div class="section-header">
@@ -198,10 +243,14 @@
           </div>
          
           
-    <div class="container">
-    <!-- Long Rectangle Image -->
-    <img src="rectangle-placeholder.png" alt="Rectangle Image" class="rectangle-image">
-</div>
+          <div class="small-banner-container">
+            <div class="small-image-wrapper">
+              <img src="./images/top10-banner.png" alt="Top 10" class="small-banner">
+            </div>
+            <div class="image-wrapper">
+              <img src="./images/youtube-banner.png" alt="Youtube link" class="small-banner">
+            </div>
+          </div>
 
     <!-- What We're Reading Section -->
     <div class="coming-soon-section">

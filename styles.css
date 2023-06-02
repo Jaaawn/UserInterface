@@ -207,35 +207,180 @@ html {
 /*container flexbox stuff*/
 .container {
   display: flex;
-  flex-direction: column; /* Align items vertically */
-  align-items: center; /* Center items horizontally */
-  justify-content: center; /* Center items vertically */
-  max-width: 60%; /* Set container width to 60% of the viewport width */
-  margin: 0 auto; /* Center container horizontally */
-  padding: 2rem; /* Add some padding around the container */
-  background-color: white; /* Set a background color for the container */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 70%;
+  margin: auto;
+  padding: 20px;
+  background-color: green;
 }
 
+.banner-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 70%;
+  margin: auto;
+  padding: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
 /* Carousel and Buttons */
-.carousel-and-buttons {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 0;
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  background-color: #F9F7F0;
 }
- 
-.carousel {
-    height: 200px;
-    width: 70%;
+
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
+  background-color: #F9F7F0;
+  padding: 25px; /* Add padding */
+  border-radius: 10px; /* Round corners */
 }
- 
-.carousel-buttons {
-    display: flex;
+
+
+.slideshow-wrapper {
+  position: relative;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Adjust the position of the dots/circles */
+.slideshow-container {
+  position: relative;
+}
+
+.dots-container {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 30px;
+}
+
+/* Add a media query for small screens */
+@media screen and (max-width: 768px) {
+  .main-container {
     flex-direction: column;
-    justify-content: space-around;
-    width: 40%;
+    align-items: center;
+  }
+
+  .buttons-container {
+    margin-left: 0;
+    margin-top: 20px;
+  }
 }
 
+.mySlides:not(:first-child) {
+  display: none;
+}
 
+.bigbutton {
+  margin-top: 10px;
+  padding: 12px 30px;
+  font-size: 16px;
+  background-color: #145757; /* Green background */
+  border: 1px solid #0F3F3F; /* Dark green border */
+  border-radius: 15px;
+  width: 250px; /* Set width */
+  text-align: center; /* Center text */
+  cursor: pointer;
+  color: #ffffff; /* White text */
+  position: relative;
+}
+
+.bigbutton:hover {
+  background-color: #0F3F3F;
+}
  
 .bestsellers,
 .new-releases,
@@ -260,10 +405,9 @@ html {
  
 /* Long Rectangle Image */
 .rectangle-image {
-    display: block;
-    height: 100px;
-    margin: 20px 0;
-    width: 100%;
+  display: block;
+  height: 250px;
+  width: 950px;
 }
  
 /* Coming Soon Section */
@@ -271,6 +415,30 @@ html {
   justify-content: space-between;
 }
 
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 5cm;
+  transform: translateY(-50%);
+  text-align: center;
+  color: white;
+}
+
+.overlay h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.overlay p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.overlay button {
+  padding: 10px 20px;
+  font-size: 16px;
+}
 
 .scrollable-section {
     padding: 10px 40;
@@ -365,7 +533,32 @@ html {
   text-overflow: ellipsis;
 }
  
+.small-banner-container {
+  max-width: 70%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
 
+.small-image-wrapper {
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex; /* Add this to center the image */
+  justify-content: center; /* Add this to center the image */
+}
+
+.small-banner {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .small-image-wrapper {
+    flex-basis: 100%;
+  }
+}
  
 /* Footer */
 .footer {
