@@ -4,25 +4,40 @@
     <meta charset="utf-8">
     <title>Browse Fantasy</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./images/favicon.ico">
   </head>
   <body>
 <!-- Top Header -->
 <div class="top-header">
-    <button class="store-locations">Store Locations</button>
+  <a href="#" class="store-locations">
+    <img src="./images/icon-location.png" class="icon">
+    <span class="text">Store Locations</span>
+  </a>
     <div class="user-buttons">
-        <button class="cart">Cart</button>
-        <button class="wishlist">Wishlist</button>
+      <a href="#" class="account">
+        <img src="./images/icon-user.png" class="icon">
+        <span class="text">My Account</span>
+      </a>
+      <a href="#" class="wishlist">
+        <img src="./images/icon-heart.png" class="icon">
+        <span class="text">Wishlist</span>
+      </a>
     </div>
 </div>
 
 <!-- Main Header -->
 <header class="main-header">
-    <img src="logo-placeholder.png" alt="Company Logo" class="logo">
-    <img src="logo-text-placeholder.png" alt="Paperback Books" class="logo-text">
+    <img src="./images/Logo Art.png" alt="Paperback Logo" class="logo">
+    <img src="./images/Logo Text.png" alt="Paperback Books" class="logo-text">
     <div class="search-and-cart">
-        <input type="search" placeholder="Search" class="search-bar">
-        <button class="view-cart">View Cart</button>
-    </div>
+      <div class="search-container">
+          <input type="search"  class="search-bar">
+          <img src="./images/icon-search.png" class="search-icon">
+      </div>
+      <a href="cart.html" class="cart">
+          <img src="./images/icon-cart.png" class="cart-icon">
+      </a>
+  </div>
 </header>
 
 <!-- Navigation Bar -->
@@ -30,26 +45,52 @@
     <div class="dropdown">
         <button class="dropbtn">Fiction</button>
         <div class="dropdown-content">
-            <a href="#">Type 1</a>
-            <a href="#">Type 2</a>
+            <a href="fantasy.html">Science Fiction</a>
+            <a href="fantasy.html">Horror Fiction</a>
+            <a href="fantasy.html">Historical Fiction</a>
+            <a href="fantasy.html">Poetry</a>
+            <a href="fantasy.html">Modern Literature</a>
+            <a href="fantasy.html">Crime & Mystery</a>
+            <a href="fantasy.html">Manga</a>
+            <a href="fantasy.html">Fantasy</a>
+            <a href="fantasy.html">Classics</a>
+            <a href="fantasy.html">Young Adult</a>
+            <a href="fantasy.html">Graphic Novels</a>
+            <a href="fantasy.html">Fiction Book of the Month</a>
         </div>
     </div>
     <div class="dropdown">
         <button class="dropbtn">Nonfiction</button>
         <div class="dropdown-content">
-            <a href="#">Type 1</a>
-            <a href="#">Type 2</a>
+            <a href="fantasy.html">Biography & Memoir</a>
+            <a href="fantasy.html">Buisness & Finance</a>
+            <a href="fantasy.html">Cooking</a>
+            <a href="fantasy.html">History</a>
+            <a href="fantasy.html">Self-Help & Meditation</a>
+            <a href="fantasy.html">Home & Garden</a>
+            <a href="fantasy.html">Fashion</a>
+            <a href="fantasy.html">Art</a>
+            <a href="fantasy.html">Animals & Nature</a>
+            <a href="fantasy.html">Science</a>
+            <a href="fantasy.html">Craft & Hobbies</a>
+            <a href="fantasy.html">Colouring Books</a>
+            <a href="fantasy.html">Humour</a>
+            <a href="fantasy.html">Family & Relationships</a>
+            <a href="fantasy.html">True Crime</a>
         </div>
     </div>
-    <a href="fantasy.html">Fantasy</a>
-    <a href="fantasy.html">Thriller</a>
-    <a href="fantasy.html">Rare Books</a>
-    <a href="fantasy.html">Poetry</a>
-    <a href="fantasy.html">Teens & YA</a>
-    <a href="fantasy.html">Adventure</a>
-    <a href="fantasy.html">Mystery</a>
+    <div class="nav-container">
+    <a href="#">Staff Recomendations</a>
+    <a href="#">About Us</a>
+    <a href="#">Newsletter</a>
+    <a href="#">Books of the Year</a>
+    <a href="#">Events</a>
+    <a href="#">Gifts & Merch</a>
+    <a href="#">Gift Vouchers</a>
+    <a href="#">Contact Us</a>
+    </div>
 </nav>
-
+<br> <br>
 
     <!-- Product page starts here -->
     <div class="container">
@@ -57,37 +98,64 @@
       <div class="filter-section">
           <input type="checkbox" id="filter-checkbox" class="filter-checkbox">
           <label for="filter-checkbox" class="filter-btn">
-              <i class="icon"></i>
+              <i class="filter-icon"></i>
               Filter
           </label>
           <div class="filter-dropdown">
-              <label><input type="radio" name="option"> Option 1</label>
-              <label><input type="radio" name="option"> Option 2</label>
-              <label><input type="radio" name="option"> Option 3</label>
-              <label><input type="radio" name="option"> Option 4</label>
-              <input type="text" placeholder="Search 1" class="search-bar">
-              <input type="text" placeholder="Search 2" class="search-bar">
+            <h6>Format</h6>
+              <label><input type="radio" name="option"> Hardcover</label>
+              <label><input type="radio" name="option"> Trade Paperback</label>
+              <label><input type="radio" name="option"> Oversized</label>
+              <label><input type="radio" name="option"> Mass Market</label>
+              <hr>
+              <h6>Price Range</h6>
+              <input type="text" placeholder="Minimum" class="search-bar-mini">
+              <input type="text" placeholder="Maximum" class="search-bar-mini">
+              <hr>
+              <h6>Extra Filters</h6>
+              <label><input type="checkbox" name="option"> On Sale</label>
+              <label><input type="checkbox" name="option"> First Edition</label>
           </div>
       </div>
-      <input type="text" placeholder="Long Search Bar" class="long-search-bar">
+
+      <div class="search-container2"> 
+        <i class="search-icon2"></i> 
+      <input type="search" placeholder="Search in Fantasy" class="long-search-bar">
+      </div>
+      
       <div class="sort-section">
           <span>Sort by:</span>
           <select class="sort-dropdown">
-              <option selected>Choose...</option>
-              <option>Choice 1</option>
-              <option>Choice 2</option>
-              <option>Choice 3</option>
-              <option>Choice 4</option>
-              <option>Choice 5</option>
+              <option selected>Relevance</option>
+              <option>Popularity</option>
+              <option>Price (Low to High)</option>
+              <option>Price (High to Low)</option>
+              <option>Publication Date</option>
+              <option>Publisher</option>
           </select>
       </div>
   </div>
 </div>
 
-<div class="container">
+
+  <div class="category-text">
+    <div class="fantasy-heading">
+  <h5>Fantasy</h5>
+</div>
+  <p class="fantasy-text">
+    Fantasy is a genre of fiction that often involves supernatural
+     or magical elements, taking place in imagined worlds
+      or alternate realities. It can include mythical creatures,
+       heroic quests, and epic battles between good and evil.
+        Think dragons, wizards, and enchanted kingdoms!
+  </p> <br>
+</div>
+<div class="fantasytext-container">
   <div class="product-grid">
     <div class="small-product">
-      <img class="book-image" src="./images/Sons of darkness.jpg">
+      <a href="destination-page.html">
+        <img class="book-image" src="./images/Sons of darkness.jpg">
+      </a>
       <div class="book-author ellipsis">Gourav Mohanty</div>
       <div class="book-title ellipsis">Sons of Darkness</div>
       <div class="book-cost ellipsis">$34.99(AUD)</div>
@@ -208,6 +276,7 @@
     </div>
   </div>
 </div>
+<br><br><br>
 
 
 

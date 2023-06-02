@@ -227,6 +227,17 @@ html {
   padding: 20px;
 }
 
+.fantasytext-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 30%;
+  margin: auto;
+  padding: 10px;
+  background-color: white;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -439,10 +450,12 @@ html {
 hr {
   border: none;
   height: 2px;
-  width: 120%;
-  background-color: #EEE6D1;
+  width: 100%;
+  background-color: rgba(15, 63, 63, 0.4);;
   margin: 0;
   padding: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 /*Book Collection section*/
@@ -538,7 +551,13 @@ hr {
   height: 180px; /* Set a fixed height value */
   width: auto;
   padding-top: 15px;
+  transition: opacity 0.3s ease;
 }
+
+.book-image:hover {
+  opacity: 0.5;
+}
+
  
 .book-spotlight-image {
   display: block;
@@ -654,6 +673,82 @@ h4 {
   color: #0D0C02;
   font-size: 1.4em;
   white-space: nowrap;
+}
+
+h5 {
+  display: inline-block;
+  width: auto;
+  height: 25px;
+  text-align: center;
+  color: #0D0C02;
+  font-size: 1.4em;
+  white-space: nowrap;
+  background-color: white;
+  margin-bottom: 0;
+  position: relative;
+  padding-left: 140px;
+  padding-right: 140px;
+}
+
+h6 {
+  width: 100%;
+  text-align: left;
+  color: #0D0C02;
+  font-size: 1em;
+  white-space: nowrap;
+  margin-top: 3px;
+  margin-bottom: 2px;
+}
+
+h5:before {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 2px;
+  background: #000;
+  left: 0;
+  top: 50%;
+  position: absolute;
+  margin-left: 20px;
+}
+
+h5:after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 2px;
+  background: #000;
+  right: 0;
+  top: 50%;
+  position: absolute;
+  margin-right: 20px;
+}
+
+.fantasy-heading {
+  text-align: center;
+  align-content: center;
+}
+
+.search-container {
+  position: relative;
+  flex-grow: 1;
+  padding-right: 3px;
+}
+
+.search-bar {
+  width: 100%;
+  padding-right: 40px; /* Adjust the padding to accommodate the image size */
+  box-sizing: border-box;
+}
+ 
+.search-icon {
+  position: absolute;
+  left: 8px; /* Adjust this value to set the distance from the right side of the search bar */
+  top: 3px; /* Padding above the image */
+  bottom: 3px; /* Padding below the image */
+  height: calc(100% - 6px); /* Adjust the height to match your image size and accommodate the padding */
+  width: auto;
+  cursor: pointer;
 }
  
 /* Footer */
@@ -921,13 +1016,14 @@ div.social {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #EEE6D1;
+  background-image: url('./images/fantasy-banner-bg.png'); 
   padding: 10px;
-  width: 100%;
+  width: 80%;
 }
 
 .filter-section {
   position: relative;
+  left: 165px;
 }
 
 .filter-checkbox {
@@ -936,6 +1032,14 @@ div.social {
 
 .filter-btn {
   cursor: pointer;
+  background-color: #0F3F3F;
+  color: white;
+  padding: 8px 12px; /* Added padding */
+  line-height: 1.4; /* Added line-height */
+  text-align: center; /* Added text-align */
+  border-radius: 5px; /* Added border-radius */
+  display: inline-flex; /* Added display */
+  align-items: center; /* Added align-items */
 }
 
 .filter-dropdown {
@@ -945,6 +1049,7 @@ div.social {
   padding: 10px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  width: 240%;
 }
 
 .filter-checkbox:checked ~ .filter-dropdown {
@@ -955,22 +1060,74 @@ div.social {
   display: block;
 }
 
-.search-bar {
+.filter-icon {
+  width: 16px; /* Set icon width */
+  height: 16px; /* Set icon height */
+  background-image: url('./images/icon-filter2.png'); /* Added background-image */
+  background-size: contain; /* Set background-size */
+  background-repeat: no-repeat; /* Set background-repeat */
+  margin-right: 13px; /* Added margin-right */
+}
+
+
+.search-bar-mini {
   display: block;
   margin-top: 5px;
+}
+
+.search-container2 {
+  position: relative; /* Added position */
+  left:253px;
+}
+
+.search-icon2 {
+  position: absolute; /* Added position */
+  width: 16px; /* Set icon width */
+  height: 16px; /* Set icon height */
+  background-image: url('./images/icon-search.png'); /* Added background-image */
+  background-size: contain; /* Set background-size */
+  background-repeat: no-repeat; /* Set background-repeat */
+  left: 25px; /* Set icon position from the left */
+  top: 50%; /* Center the icon vertically */
+  transform: translateY(-50%); /* Align the icon vertically */
 }
 
 .long-search-bar {
   margin-left: 20px;
   flex-grow: 1;
+  width: 620px;
+  max-width: 45%;
+  padding-left: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 8px;
+  background-color: #F9F7F0;
 }
 
 .sort-section {
   display: flex;
   align-items: center;
-  margin-left: 20px;
+  margin-left: 1px;
+  padding-right: 105px;
+  margin-right: 30px;
+  white-space: nowrap;
 }
 
 .sort-dropdown {
-  margin-left: 5px;
+  margin-left: 2px;
+}
+
+
+.fantasy-text {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.category-text {
+  align-items: center;
+  justify-content: center;
+  max-width: 30%;
+  margin: auto;
+  padding: 10px;
+  background-color: white;
 }
