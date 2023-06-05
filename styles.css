@@ -1138,12 +1138,11 @@ div.social {
 .product-div {
   width: 60%;
   margin: 0 auto;
-  background-color: pink;
 }
 .top-section {
   display: flex;
   gap: 35px;
-  background-color: lightseagreen;
+  background-image: url('./images/bg.png');
 }
 .book-cover-large {
   width: 40%;
@@ -1187,6 +1186,10 @@ div.social {
   padding-right: 18px;
   border-radius: 10px;
   border: 1px #0f3f3f solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
 }
 
 .large-text {
@@ -1198,21 +1201,36 @@ div.social {
   gap: 15px;
   justify-content: center;
 }
+.icon-heart {
+  width: 22px; /* Adjust the size of the icon here */
+  height: 22px;
+}
+
 .synopsis-div {
   margin-top: 35px;
   width: 75%;
   text-align: center;
-  background-color: yellow;
-  margin: 0 auto 100px;
+  margin: 0 auto 5px;
 }
 .bottom-section {
   display: flex;
-  gap: 35px;
-  margin-top: 5px;
-  background-color: purple;
+  gap: 15px;
+  margin-top: 35px;
 }
 .left-div, .right-div {
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+.left-div {
+  background-image: url('./images/bg-slides.png');
+}
+
+.right-div {
+  background-image: url('./images/bg-slides.png');
 }
 
 .product-page-author {
@@ -1276,9 +1294,24 @@ div.social {
   cursor: pointer;
   display: inline-block;
   padding: 0 .5em;
-  color: #666;
   font-size: .9em;
   line-height: 2;
-  border: 1px solid #ddd;
   border-radius: .25em;
 }
+
+.books-container2 {
+  max-width: 100%; /* Set a max-width to match the .container */
+  margin: 0 auto; /* Center the container horizontally */
+  -ms-overflow-style: none;
+  padding-top: 2px;
+  background-image: url('./images/bg-slides.png');
+} 
+
+.synopsis-colour {
+  background-image: url('./images/bg2.png');
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/* Cart CSS starts here */
