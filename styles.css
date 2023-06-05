@@ -28,9 +28,9 @@ html {
 }
 
 .icon {
-  width: 19px; /* Adjust the width and height as needed */
+  width: 19px; 
   height: 19px;
-  margin-right: 5px; /* Spacing between the icon and text */
+  margin-right: 5px; 
 }
  
 .user-buttons {
@@ -95,7 +95,7 @@ html {
   right: 9px; /* Adjust this value to set the distance from the right side of the search bar */
   top: 3px; /* Padding above the image */
   bottom: 3px; /* Padding below the image */
-  height: calc(100% - 6px); /* Adjust the height to match your image size and accommodate the padding */
+  height: calc(100% - 6px); /* Adjust the height to match image size and accommodate the padding */
   width: auto;
   cursor: pointer;
 }
@@ -746,7 +746,7 @@ h5:after {
   left: 8px; /* Adjust this value to set the distance from the right side of the search bar */
   top: 3px; /* Padding above the image */
   bottom: 3px; /* Padding below the image */
-  height: calc(100% - 6px); /* Adjust the height to match your image size and accommodate the padding */
+  height: calc(100% - 6px); /* Adjust the height to match image size and accommodate the padding */
   width: auto;
   cursor: pointer;
 }
@@ -1314,4 +1314,184 @@ div.social {
   padding-bottom: 15px;
 }
 
+
+
+
+
+
+
 /* Cart CSS starts here */
+.cart-div {
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  margin-top: -68px;
+  max-width: 70%;
+  padding: 0;
+  background-color: skyblue;
+}
+
+.input {
+  margin: 0;
+  padding: 10px;
+  width: 45px;
+  text-align: center;
+}
+
+.price {
+  font-weight: 700;
+  color: #0F3F3F;
+}
+
+.btn {
+  text-decoration: none;
+  background-color: #0F3F3F;
+  border: 1px solid #0F3F3F;
+  color: white;
+  padding: 15px 17px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.basket-card--container {
+  display: flex;
+  flex-direction: column;
+  min-width: 15.25em;
+  margin: 10px;
+  background: pink;
+}
+
+.basket-card--container .info-container {
+  border: 1px solid #0F3F3F;
+  border-bottom: none;
+}
+
+@media (min-width: 30em) {
+  .basket-card--container .info-container {
+    position: relative;
+    border-bottom: 1px solid #0F3F3F;
+  }
+}
+
+.basket-card--container .info-container .card-info {
+  order: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 10px;
+}
+
+.basket-card--container .info-container .card-info {
+  display: block;
+  align-self: flex-start;
+  min-width: 70px;
+  margin-right: 15px;
+  font-size: 0;
+}
+
+.basket-card--container .info-container .card-info .remove {
+  background: none;
+  border: none;
+  padding: 0;
+  min-width: 45px;
+  height: 45px;
+  line-height: 45px;
+  font-size: 30px;
+  margin-left: 5px;
+  text-align: center;
+  color: #0F3F3F;
+}
+
+.basket-card--container .info-container .card-info .remove:focus {
+  outline-color: #0F3F3F;
+  outline-offset: -3px;
+}
+
+.basket-card--container .info-container .card-info .info {
+  flex: auto 1 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.basket-card--container .info-container .card-info .info .name {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+  text-transform: uppercase;
+}
+
+@media (min-width: 20em) {
+  .basket-card--container .info-container .card-info .info .name {
+    font-size: 18px;
+  }
+}
+
+.basket-card--container .info-container .card-info .info .other-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.basket-card--container .info-container .card-info .info .other-info .amount {
+  font-weight: 700;
+  color: #0F3F3F;
+  margin-right: 5px;
+  font-size: 16px;
+}
+
+.basket-card--container .info-container .card-info .info .other-info .basket-price {
+  font-weight: 700;
+  color: #0F3F3F;
+  font-size: 16px;
+}
+
+.basket-card--container .info-container .card-info .info .other-info .basket-price .currency {
+  font-weight: 700;
+  color: #0F3F3F;
+  font-size: 12px;
+}
+
+.basket-card--container .info-container .card-info .info .other-info .basket-price .price-amount {
+  font-weight: 700;
+  color: #0F3F3F;
+  font-size: 16px;
+}
+
+.basket-card--container .quantity-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  background: #faf5e8;
+  border: 1px solid #0F3F3F;
+}
+.minus,
+.plus {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.minus img,
+.plus img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.cart-image {
+  display: block;
+  align-self: flex-start;
+  margin-right: 15px;
+  font-size: 0;
+  width: 90px;
+  height: 120px;
+}
+
+.info-container {
+  background-color: purple;
+}
