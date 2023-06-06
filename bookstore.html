@@ -16,8 +16,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
 
 
-      <!-- link to the java -->
-      <script src="script.js"></script>
+     
  
       <link rel="icon" href="./images/favicon.ico">
 
@@ -433,13 +432,12 @@
          <div class="column about">
           <h3>Social Media</h3>
          
-                    <div class="social">
-                      <i class="fa-brands fa-facebook-square"></i>
-                      <i class="fa-brands fa-instagram-square"></i>
-                      <i class="fa-brands fa-twitter-square"></i>
-                      <i class="fa-brands fa-youtube-square"></i>
-                      <i class="fa-brands fa-whatsapp-square"></i>
-                    </div>
+          <div class="social">
+            <img class="custom-icon" src="./images/icon-fb.png" alt="Facebook" />
+            <img class="custom-icon" src="./images/icon-insta.png" alt="Instagram" />
+            <img class="custom-icon" src="./images/icon-twitter.png" alt="Twitter" />
+            <img class="custom-icon" src="./images/icon-yt.png" alt="YouTube" />
+          </div>
           <p>
            <br> © 2023 Paperback Books <br>
           ABN 98845696517
@@ -448,6 +446,33 @@
       </div>
       
     </footer>
-
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+    
+     
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+    
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+      }
+    </script>
 </body>
 </html>

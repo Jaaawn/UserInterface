@@ -31,7 +31,11 @@ function updateQuantity(change) {
 
 
 
-// JavaScript for "slideshow" (homepage) ----------------
+/* JavaScript for "slideshow" (homepage)
+NOTE: Running this code externally worked fine throughout development, 
+but suddenly stopped working close to the deadline. As a temporary fix, the code below
+has been added directly to the bookstore.html file.
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -61,4 +65,4 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-
+*/
