@@ -90,65 +90,105 @@
     <a href="#">Gift Vouchers</a>
     <a href="#">Contact Us</a>
     </div>
-</nav>
-<br> 
-<!-- End Navigation Bar -->
+</nav> 
+<!-- End Navigation Bar  -->
 
-<br> <br> <br><br> <br>   
+<div class="fantasy-heading">
+  <h5>Shopping Cart</h5>
+</div>
+<br>
   <!-- cart starts here -->
   <div class="cart-div">
-  <div class="basket-card--container">
-     <div class="info-container">
-        <div class="card-info">
-            <img class="cart-image" src="./images/Sons of darkness-thumbnail.png">
-            <div class="info">
-               <div class="name">Sons of Darkness</div>
-               <div class="other-info">
-                  <div class="amount">Book deets here</div>
-                  <div class="basket-price">$34.99</div>
-               </div>
+    <div class="cart-listing">
+        <div class="cart-column column-1">
+            <img src="./images/sons of darkness.jpg" alt="Sons of Darkness">
+        </div>
+        <div class="cart-column column-2">
+            <p>Sons of darkness</p>
+            <p>Gourav Mohanty</p>
+            <p>Type: Hardcover</p>
+            <div class="quantity-control">
+                <span>Qty:</span>
+                <div class="quantity-box">
+                    <button class="quantity-btn minus" onclick="updateQuantity(-1)"><img src="./images/icon-minus.png" alt="-"></button>
+                    <span id="quantity">1</span>
+                    <button class="quantity-btn plus" onclick="updateQuantity(1)"><img src="./images/icon-plus.png" alt="+"></button>
+                </div>
             </div>
         </div>
-        <div class="quantity-buttons">
-          <button class="minus" type="button">
-            <img src="./images/icon-minus.png" alt="minus">
-          </button>
-          <input class="input" type="text" value="1">
-          <button class="plus" type="button">
-            <img src="./images/icon-plus.png" alt="plus">
-          </button>
+        <div class="cart-column column-3">
+            <br><br><h8>$34.99</h8>
         </div>
-     </div> 
-     <br>
-     <div class="info-container">
-      <div class="card-info">
-          <img class="cart-image" src="./images/10.jfif">
-          <div class="info">
-             <div class="name">The Golden Enclaves</div>
-             <div class="other-info">
-                <div class="amount">Book deets here</div>
-                <div class="basket-price">$22.99</div>
-             </div>
+    </div>
+    <br>
+    <div class="cart-listing">
+      <div class="cart-column column-1">
+          <img src="./images/10.jfif" alt="The Golden Enclaves">
+      </div>
+      <div class="cart-column column-2">
+          <p>The Golden Enclaves</p>
+          <p>Naomi Novik</p>
+          <p>Type: Paperback</p>
+          <div class="quantity-control">
+              <span>Qty:</span>
+              <div class="quantity-box">
+                  <button class="quantity-btn minus" onclick="updateQuantity(-1)"><img src="./images/icon-minus.png" alt="-"></button>
+                  <span id="quantity">1</span>
+                  <button class="quantity-btn plus" onclick="updateQuantity(1)"><img src="./images/icon-plus.png" alt="+"></button>
+              </div>
           </div>
       </div>
-      <div class="quantity-buttons">
-        <button class="minus" type="button">
-          <img src="./images/icon-minus.png" alt="minus">
-        </button>
-        <input class="input" type="text" value="1">
-        <button class="plus" type="button">
-          <img src="./images/icon-plus.png" alt="plus">
-        </button>
+      <div class="cart-column column-3">
+          <p class="crossed-out">$30.00</p>
+          <h8>$22.99</h8>
       </div>
-   </div>
-   <br>
-
-
+  </div>
+    <br>
+    <div class="cart-checkout">
+      <a href="fantasy.html" class="btn save-for-later">Save cart for later</a>
+      <a href="checkout.html" class="btn checkout">Checkout</a>
+      <div class="total">
+          <small>Total (2 items)</small>
+          <p>$57.98</p>
+      </div>
+    </div>
+    <br>
+</div>
      <img class="sherlock-banner" src="./images/sherlock-banner.png">
-
+      <br>
+     <div class="recommended">
+      <p class="recommended-title">Other recommended products</p>
+      <div class="recommended-products">
+          <div class="rec-product">
+              <img src="./images/original_temp_img (1).jfif" alt="Recommended Product 1">
+              <p>Phantom Atlas</p>
+              <p>$39.99</p>
+              <button class="add-to-cart">Add to cart</button>
+          </div>
+          <div class="rec-product">
+            <img src="./images/similar 3.jpg" alt="Recommended Product 2">
+            <p>Illborn</p>
+            <p>$15.00</p>
+            <button class="add-to-cart">Add to cart</button>
+        </div>
+        <div class="rec-product">
+          <img src="./images/4.1.jpeg" alt="Recommended Product 3">
+          <p>Totebag</p>
+          <p>$19.99</p>
+          <button class="add-to-cart">Add to cart</button>
+      </div>
+      <div class="rec-product">
+        <img src="./images/4..6.jpg" alt="Recommended Product 4">
+        <p>City Parks</p>
+        <p>$39.99</p>
+        <button class="add-to-cart">Add to cart</button>
+    </div>
+      </div>
   </div>
 
-</div>
+
+
+     <script src="script.js"></script>
 <br> <br> <br><br> <br> 
 
       <footer>

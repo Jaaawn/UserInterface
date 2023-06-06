@@ -15,6 +15,19 @@ popup.addEventListener('click', (event) => {
   }
 });
 
+// JavaScript for "Quantity" (cart) ----------------
+function updateQuantity(change) {
+  const quantityElement = document.getElementById('quantity');
+  let currentQuantity = parseInt(quantityElement.textContent, 10);
+  currentQuantity += change;
+
+  if (currentQuantity < 1) {
+    currentQuantity = 1;
+  }
+
+  quantityElement.textContent = currentQuantity;
+}
+
 
 
 // JavaScript for "slideshow" (homepage) ----------------
