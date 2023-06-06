@@ -4,8 +4,49 @@
     <meta charset="utf-8">
     <title>Secure Checkout</title>
     <link rel="icon" href="./images/favicon.ico">
-    
-  </head>
-  <body>
-    uwu
-  </body>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Checkout</title>
+</head>
+<body id="checkout-page">
+<img src="./images/logo text.png" alt="Logo" class="logo">
+
+<!-- Checkout process container -->
+<div class="checkout-process">
+  <div class="user-checkout">
+   <!-- Shipping image -->
+<img src="./images/shipping1.png" class="shipping-icon">
+
+<!-- Account details heading -->
+<h2 class="account-details-heading">Account details</h2>
+
+<label for="email" class="email-label">Email</label>
+<input type="email" id="email" class="email-input">
+<br>
+<label for="password" class="password-label">Password</label>
+<input type="password" id="password" class="password-input">
+<br>
+<!-- Register and login section -->
+<div class="register-login">
+  <a href="#" class="register-link">Register for an Account</a>
+  <button class="login-button">Login</button>
+</div>
+
+<!-- Gap and horizontal line -->
+<div class="checkout-gap"></div>
+<hr class="checkout-line">
+<br>
+
+<!-- Cancel order and continue buttons -->
+<div class="actions">
+  <a href="#" class="cancel-order">Cancel Order</a>
+  <button class="continue-button">Continue</button>
+</div>
+  </div>
+  <div class="order-summary">
+    <!-- Order summary content goes here -->
+    <p>Order summary content...</p>
+  </div>
+</div>
+</body>
+</html>

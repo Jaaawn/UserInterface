@@ -1607,4 +1607,124 @@ h8 {
   cursor: pointer;
 }
 
-/* Checkout porcess starts here --------------------*/
+/* Checkout process starts here --------------------*/
+#checkout-page {
+  background-color: #F9F7F0;
+}
+
+#checkout-page .logo {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  width: 27%;
+}
+
+.checkout-process {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.user-checkout,
+.order-summary {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.user-checkout {
+  width: 55%;
+}
+
+.order-summary {
+  width: 40%;
+}
+
+/* User-checkout styles */
+
+.shipping-icon {
+  display: block;
+  margin: 0 auto;
+  height: 20px;
+}
+
+.account-details-heading {
+  text-align: left;
+}
+
+.email-label,
+.password-label {
+  display: block;
+  text-align: left;
+}
+
+.email-input,
+.password-input {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #EEE6D1;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+.register-login {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.register-link {
+  text-decoration: underline;
+  margin-right: 1rem;
+  color: #0d0c02;
+  font-size: small;
+}
+
+.login-button {
+  padding: 10px 25px;
+  margin-right: 20px;
+  background-color: #0f3f3f;
+  border: none;
+  color: white;
+}
+
+.checkout-gap {
+  height: 130px; /* Adjust the size of the gap as needed */
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cancel-order {
+  margin-right: 1rem;
+  color: black;
+  font-size: small;
+  /* Add any additional link styles */
+}
+
+.continue-button {
+  background-color: #0f3f3f;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 7px;
+  /* Add any additional button styles */
+}
+
+hr.checkout-line {
+  border: none;
+  height: 1px;
+  width: 100%;
+  background-color: #eee6d1;
+  margin: 0;
+  padding: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
