@@ -1,14 +1,3 @@
-// JavaScript for checkout pages (highlights it)---------------
-
-var checkoutList = document.getElementById("checkoutList");
-var checkoutItems = checkoutList.getElementsByClassName("step-checkout_item");
-for (var i = 0; i < checkoutItems.length; i++) {
-  checkoutItems[i].addEventListener("click", function() {
-  var current = document.getElementsByClassName("active");
-  current[0].className = current[0].className.replace(" active", "");
-  this.className += " active";
-  });
-}
 
 
 // JavaScript for "added to cart" popup---------------
