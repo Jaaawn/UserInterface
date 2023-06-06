@@ -1840,3 +1840,55 @@ hr.checkout-line {
   text-align: right;
   margin: 0;
 }
+
+/* Saved address section styles */
+.address-section {
+  display: flex;
+  align-items: center;
+}
+
+.saved-address-text {
+  margin-right: 20px;
+}
+
+/* Postcode and shipping rows styles */
+.postcode-row,
+.postcode-input-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.postcode-row {
+  margin-bottom: 2px;
+  height: 25px;
+}
+
+.postcode-text,
+.shipping-text {
+  width: 40%;
+  margin-right: 15px;
+}
+
+.postcode-input {
+  width: 35%;
+  margin-right: 15px;
+  border: none;
+  background-color: #eee6d1;
+  border-radius: 4px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.shipping-text {
+  padding-left: 8px;
+}
+
+.address-dropdown, .shipping-dropdown {
+  background-color: #eee6d1;
+  border: none;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 10px;
+  border-radius: 4px;
+}
