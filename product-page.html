@@ -5,7 +5,7 @@
     <title>Sons of Darkness</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="./images/favicon.ico">
-    <script src="script.js"></script>
+    
   </head>
   <body>
 <!-- Top Header -->
@@ -100,11 +100,29 @@
         <a href="fantasy.html">Fantasy</a> > 
         <a href="product-page.html">Sons of Darkness</a> 
     </div> <br> <br>
-
+<!-- Popup structure -->
+<div class="popup" id="popup">
+  <div class="popup-content">
+    <div class="success-row">
+      <img src="./images/icon-tick.png" alt="Success icon" class="success-icon">
+      <p>Item Successfully Added<br>To Your Cart</p>
+    </div>      
+    <hr>
+    <div class="item-info">
+      <img src="./images/Sons of darkness-thumbnail.png" class="popup-image" />
+      <p class="popup-text">Sons of Darkness <br> by Gourav Mohanty</p>
+      <div class="popup-buttons">
+        <a href="#" class="pop-button">View Cart</a>
+        <a href="#" class="pop-button">Continue Shopping</a>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- Product page starts here -->
     <div class="product-div">
         <div class="top-section">
           <div class="book-cover-large" id="book-cover-thumbnail">
-            <img class="expandable-image" src="./images/Sons of darkness-thumbnail.png" alt="Book Cover">
+            <img class="expandable-image" src="./images/Sons of darkness.jpg" alt="Book Cover">
           </div>
           <div class="text-section">
             <br>
@@ -227,7 +245,8 @@
           </div> </div>
   </body>
  <br>
-
+ 
+ <script src="script.js"></script>
 
 
 <footer>

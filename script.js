@@ -1,5 +1,23 @@
 
+// JavaScript for "added to cart" popup---------------
+const buyButton = document.querySelector('.buy-button');
+const popup = document.getElementById('popup');
 
+// Open the popup when the buy button is clicked
+buyButton.addEventListener('click', () => {
+  popup.style.display = 'block';
+});
+
+// Close the popup when clicking outside the popup content
+popup.addEventListener('click', (event) => {
+  if (event.target === popup) {
+    popup.style.display = 'none';
+  }
+});
+
+
+
+// JavaScript for "slideshow" (homepage) ----------------
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -29,4 +47,4 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-// product page interactions 
+
