@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Secure Checkout</title>
+    <link rel="icon" href="./images/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Checkout</title>
+</head>
+<body id="checkout-page">
+<img src="./images/logo text.png" alt="Logo" class="logo">
+
+<!-- Checkout process container -->
+<div class="checkout-process">
+  <div class="user-checkout">
+   <!-- Shipping image -->
+<img src="./images/shipping3.png" class="shipping-icon">
+<br>
+<!-- Account details heading -->
+<h2 class="account-details-heading">Payment details</h2>
+<div class="address-section">
+    <p class="saved-address-text">Payment method:</p>
+    <select class="address-dropdown">
+        <option>Add new card details</option>
+      <option>Visa card ending in 1234</option>
+      <option>PayPal</option>
+    </select>
+  </div>
+<label for="email" class="email-label">Name on card</label>
+<input type="email" id="email" class="email-input">
+<br>
+<label for="password" class="password-label">Card number</label>
+<input type="text" id="password" class="password-input">
+<br>
+<!-- Expiration and CVC row -->
+<div class="card-details-row">
+    <div class="expiration-text">
+      <p>Expiration</p>
+    </div>
+    <div class="cvc-text">
+      <p>CVC</p>
+    </div>
+  </div>
+  
+  <!-- Expiration date input and CVC input row -->
+  <div class="card-input-row">
+    <div class="expiration-inputs">
+      <input type="number" id="day" class="day-input" placeholder="DD">
+      <span class="separator">/</span>
+      <input type="number" id="month" class="month-input" placeholder="MM">
+    </div>
+    <div class="cvc-input-container">
+      <input type="number" id="cvc" class="cvc-input">
+    </div>
+  </div>
+<br>
+
+<!-- Gap and horizontal line -->
+<br>
+<hr class="checkout-line">
+<br>
+
+<!-- Cancel order and continue buttons -->
+<div class="actions">
+  <a href="shipping.html" class="cancel-order">Cancel Order</a>
+  <a href="order-confirmation.html"><button class="continue-button">Confirm & Pay</button></a>
+</div>
+  </div>
+
+
+  <div class="order-summary">
+   <!-- Order summary heading -->
+<p class="order-summary-heading">Order Summary</p>
+
+<!-- Checkout item container -->
+<div class="checkout-item">
+  <!-- Item image -->
+  <img src="./images/Sons of darkness.jpg" class="item-image">
+
+  <!-- Item details -->
+  <div class="item-details">
+    <p class="item-title">Sons of Darkness</p>
+    <p class="item-price">$34.99</p>
+    <div class="item-quantity">
+      <img src="./images/icon-minus2.png" class="minus-button2">
+      <input type="number" id="quantity" class="quantity-input" value="1">
+      <img src="./images/icon-plus2.png" class="plus-button2">
+    </div>
+  </div>
+</div>
+<br>
+<div class="checkout-item">
+    <!-- Item image -->
+    <img src="./images/10.jfif" class="item-image">
+  
+    <!-- Item details -->
+    <div class="item-details">
+      <p class="item-title">The Golden Enclaves</p>
+      <p class="item-price">$22.99</p>
+      <div class="item-quantity">
+        <img src="./images/icon-minus2.png" class="minus-button2">
+        <input type="number" id="quantity" class="quantity-input" value="1">
+        <img src="./images/icon-plus2.png" class="plus-button2">
+      </div>
+    </div>
+  </div> <br>
+  <!-- Gift card/discount code label and input -->
+<p class="gift-card-label">Gift Card/Discount code</p>
+<div class="gift-card-input-group">
+  <input type="text" id="gift-card" class="gift-card-input">
+  <button class="apply-button">Apply</button>
+</div>
+
+<!-- Summary checkout text containers -->
+<div class="summary-checkout">
+<div class="summary-checkout-text1">
+  <p>Sub Total<br>Shipping <br>Total</p>
+
+</div>
+<div class="summary-checkout-text2">
+  <p>$57.98<br>$15.99<br>$73.97</p>
+</div>
+</div>
+  </div>
+</div>
+</body>
+</html>

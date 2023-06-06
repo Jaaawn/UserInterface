@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fanwood+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+
+
 /* General Styling */
 body {
     font-family: Arial, sans-serif;
@@ -1891,4 +1896,127 @@ hr.checkout-line {
   padding-bottom: 7px;
   padding-left: 10px;
   border-radius: 4px;
+}
+
+/* Expiration and CVC row styles */
+.card-details-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2px;
+  height: 25px;
+}
+
+.expiration-text,
+.cvc-text {
+  width: 50%;
+}
+
+/* Expiration date input and CVC input row styles */
+.card-input-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.expiration-inputs {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+.day-input,
+.month-input {
+  /* Adjust the width as needed */
+  width: 30%;
+  background-color: #eee6d1;
+  border: none;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-radius: 4px;
+  padding-left: 10px;
+}
+
+.separator {
+  margin: 0 5px;
+}
+
+.cvc-input-container {
+  width: 50%;
+}
+
+.cvc-input {
+  /* Adjust the width as needed */
+  width: 100%;
+  background-color: #eee6d1;
+  border: none;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-radius: 4px;
+  padding-left: 10px;
+}
+
+/*Order Confirmation page here wooooooo */
+.cart-order-summary {
+  width: 40%;
+  margin: 0 auto;
+  background-image: url('./images/checkout-fade.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: top;
+  padding-bottom: 200px;
+}
+
+.order-image {
+  display: block;
+  width: 100%;
+  max-height: 160px;
+  object-fit: contain;
+  margin-bottom: 20px;
+  padding-top: 25px;
+}
+
+.detailed-text-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  padding: 10px;
+}
+
+.column-text {
+  margin: 0;
+}
+
+.column-link a {
+  text-decoration: underline;
+  color: inherit;
+}
+
+.return-button {
+  display: inline-block;
+  padding: 10px 30px;
+  text-decoration: none;
+  background-color: #0F3F3F;
+  color: white;
+  border: none;
+  margin-top: 20px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.order-heading {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.order-email,
+.order-time {
+  font-family: 'Fanwood Text', serif;
+  text-align: center;
+  margin: 5px 0;
+}
+
+.order-time {
+  margin-bottom: 45px;
 }
