@@ -59,11 +59,9 @@ html {
     padding: 10px;
     background-color: #F9F7F0;
 }
- 
 .logo-text {
     height: 100px;
 }
-
 .logo {
   height:130px;
 }
@@ -81,6 +79,7 @@ html {
 @media screen and (max-width: 768px) {
   .logo {
     display: none; 
+  }
 
   .logo-text {
     height: 80px;
@@ -107,7 +106,7 @@ html {
 .search-icon {
   position: absolute;
   right: 9px; 
-  top: 3px;
+  top: 3px; 
   bottom: 3px; 
   height: calc(100% - 6px); 
   width: auto;
@@ -123,9 +122,9 @@ html {
 }
 
 .cart-icon {
-  width: 28px; /* Adjust the width and height as needed */
+  width: 28px; 
   height: 28px;
-  margin-right: 5px; /* Spacing between the icon and text */
+  margin-right: 5px; 
 }
  
 /* Navigation Bar */
@@ -138,33 +137,30 @@ html {
   font-family: 'Cardo', serif;
   font-weight: 700;
 }
-
-/* Media query for smaller screens */
 @media screen and (max-width: 768px) {
   .nav-bar {
     white-space: nowrap;
-    flex-wrap: nowrap; /* Added property to prevent wrapping */
+    flex-wrap: nowrap; 
   }
 }
-
 .nav-container {
   overflow-x: auto;
-  -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+  -ms-overflow-style: none;
   white-space: nowrap;
   padding: 8px 12px;
 }
 
 .nav-container::-webkit-scrollbar {
-  display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+  display: none; 
 }
 
 .nav-bar a,
 .dropbtn {
-  color: black; /* Change text color to black */
+  color: black; 
   cursor: pointer;
   padding: 8px 12px;
   text-decoration: none;
-  background-color: white; /* Set initial background color */
+  background-color: white;
   border-right: 2px #F9F7F0 solid;
   border-left: none;
   border-bottom: none;
@@ -180,7 +176,7 @@ html {
 /* Add hover effect for .nav-bar a and .dropbtn */
 .nav-bar a:hover,
 .dropbtn:hover {
-  background-color: #F9F7F0; /* Change background color on hover */
+  background-color: #F9F7F0; 
 }
 
 .dropdown {
@@ -195,7 +191,7 @@ html {
   min-width: 160px;
   border: none; 
   columns: 3;
-  column-gap: 10px; /* Adjust the gap between columns as needed */
+  column-gap: 10px; 
   background-color: #F9F7F0;
   border-right: none;
   z-index: 1;
@@ -210,7 +206,7 @@ html {
 }
 
 .dropdown-content a:hover {
-  background-color: #eee6d1; /* Change to desired hover color */
+  background-color: #eee6d1; 
 }
 
 .dropdown:hover .dropdown-content {
@@ -266,7 +262,6 @@ html {
 * {
   box-sizing: border-box;
 }
-/* Carousel and Buttons */
 
 /* Slideshow container */
 .slideshow-container {
@@ -283,8 +278,8 @@ html {
   width: 70%;
   margin: 0 auto;
   background-color: #F9F7F0;
-  padding: 25px; /* Add padding */
-  border-radius: 10px; /* Round corners */
+  padding: 25px; 
+  border-radius: 10px; 
 }
 
 
@@ -309,34 +304,23 @@ html {
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
-
-/* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-
-/* Adjust the position of the dots/circles */
 .slideshow-container {
   position: relative;
 }
-
 .dots-container {
   position: absolute;
   bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
 }
-
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
-
-
-
-/* Number text (1/3 etc) */
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
@@ -344,8 +328,6 @@ html {
   position: absolute;
   top: 0;
 }
-
-/* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
   height: 15px;
@@ -406,10 +388,10 @@ html {
   padding: 12px 30px;
   font-size: 16px;
   background-image: linear-gradient(-45deg, #145757 25%, #fff 25%, #fff 75%, #145757 75%);
-  border: 3px solid #0F3F3F; /* Dark green border */
+  border: 3px solid #0F3F3F; 
   border-radius: 5px;
-  width: 250px; /* Set width */
-  text-align: center; /* Center text */
+  width: 250px; 
+  text-align: center;
   cursor: pointer;
   color: #0F3F3F; 
   position: relative;
@@ -432,23 +414,17 @@ html {
     padding: 8px 12px;
     text-align: center;
 }
- 
- 
- 
- 
-/* Long Rectangle Image */
 .rectangle-image {
   display: block;
   height: 250px;
   width: 950px;
 }
  
-/* Coming Soon Section */
 .coming-soon-section{
   justify-content: space-between;
 }
 
-
+/* Overlay style */
 .overlay {
   position: absolute;
   top: 50%;
@@ -457,7 +433,6 @@ html {
   text-align: center;
   color: white;
 }
-
 .overlay h1 {
   font-size: 24px;
   margin-bottom: 10px;
@@ -503,9 +478,6 @@ hr {
   margin-right: 20px;
 }
 
-
-/*------------------------*/ 
-
 .product-grid {
   display: grid;
   grid-template-columns: repeat(5,3fr);
@@ -520,9 +492,6 @@ hr {
   border: 3px solid #F9F7F0; 
   border-radius: 20px;
 }
-
-
-
 
 .scrollable-section {
     padding: 10px 40;
@@ -554,14 +523,14 @@ hr {
 }
 
 .books-container {
-  max-width: 60%; /* Set a max-width to match the .container */
-  margin: 0 auto; /* Center the container horizontally */
-  overflow-x: auto; /* Enable horizontal scrolling when needed */
+  max-width: 60%; 
+  margin: 0 auto; 
+  overflow-x: auto; 
   -ms-overflow-style: none;
 } 
 
 .books-container::-webkit-scrollbar {
-  display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+  display: none; 
 }
 
 .book {
@@ -576,7 +545,7 @@ hr {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  height: 180px; /* Set a fixed height value */
+  height: 180px; 
   width: auto;
   padding-top: 15px;
   transition: opacity 0.3s ease;
@@ -648,8 +617,8 @@ hr {
 }
 
 .book-cost small {
-  font-size: 7pt; /* Set the size you want for the currency */
-  font-weight: normal; /* Reset the font-weight for the currency */
+  font-size: 7pt;
+  font-weight: normal; 
 }
 
 .breif-desc {
@@ -698,8 +667,8 @@ hr {
 .small-image-wrapper {
   padding: 10px;
   box-sizing: border-box;
-  display: flex; /* Add this to center the image */
-  justify-content: center; /* Add this to center the image */
+  display: flex; 
+  justify-content: center; 
 }
 
 .small-banner {
@@ -783,16 +752,16 @@ h5:after {
 
 .search-bar {
   width: 100%;
-  padding-right: 40px; /* Adjust the padding to accommodate the image size */
+  padding-right: 40px; 
   box-sizing: border-box;
 }
  
 .search-icon {
   position: absolute;
-  left: 8px; /* Adjust this value to set the distance from the right side of the search bar */
-  top: 3px; /* Padding above the image */
-  bottom: 3px; /* Padding below the image */
-  height: calc(100% - 6px); /* Adjust the height to match image size and accommodate the padding */
+  left: 8px; 
+  top: 3px; 
+  bottom: 3px; 
+  height: calc(100% - 6px); 
   width: auto;
   cursor: pointer;
 }
@@ -846,7 +815,7 @@ h5:after {
     }
 }
 
-/*DO NOT DELETE MAGIC CODE!!!! get help on wtf it only works with this line */
+
 --------------------------------------------
 
 body {
@@ -871,7 +840,6 @@ footer * {
   padding: 1em 1em;
 }
 
-/* edit here to change the row layout*/
 .row.primary {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -999,7 +967,7 @@ div.social {
 
 }
 
-/* ----------Fantasy.html starts here---------- */
+/* -Fantasy.html css starts here- */
 
 .product-filter {
   display: flex; 
@@ -1048,7 +1016,6 @@ div.social {
   .product-card {
     flex: 1 21%;
   }
-  /* Select the first two */
 .products .product-card:first-child, 
 .products .product-card:nth-child(2) {
   flex: 2 46%;
@@ -1083,12 +1050,12 @@ div.social {
   cursor: pointer;
   background-color: #0F3F3F;
   color: white;
-  padding: 8px 12px; /* Added padding */
-  line-height: 1.4; /* Added line-height */
-  text-align: center; /* Added text-align */
-  border-radius: 5px; /* Added border-radius */
-  display: inline-flex; /* Added display */
-  align-items: center; /* Added align-items */
+  padding: 8px 12px; 
+  line-height: 1.4; 
+  text-align: center; 
+  border-radius: 5px; 
+  display: inline-flex;
+  align-items: center;
 }
 
 .filter-dropdown {
@@ -1110,12 +1077,12 @@ div.social {
 }
 
 .filter-icon {
-  width: 16px; /* Set icon width */
-  height: 16px; /* Set icon height */
-  background-image: url('./images/icon-filter2.png'); /* Added background-image */
-  background-size: contain; /* Set background-size */
-  background-repeat: no-repeat; /* Set background-repeat */
-  margin-right: 13px; /* Added margin-right */
+  width: 16px; 
+  height: 16px; 
+  background-image: url('./images/icon-filter2.png'); 
+  background-size: contain; 
+  background-repeat: no-repeat; 
+  margin-right: 13px; 
 }
 
 
@@ -1125,20 +1092,20 @@ div.social {
 }
 
 .search-container2 {
-  position: relative; /* Added position */
+  position: relative; 
   left:253px;
 }
 
 .search-icon2 {
-  position: absolute; /* Added position */
-  width: 16px; /* Set icon width */
-  height: 16px; /* Set icon height */
-  background-image: url('./images/icon-search.png'); /* Added background-image */
-  background-size: contain; /* Set background-size */
-  background-repeat: no-repeat; /* Set background-repeat */
-  left: 25px; /* Set icon position from the left */
-  top: 50%; /* Center the icon vertically */
-  transform: translateY(-50%); /* Align the icon vertically */
+  position: absolute; 
+  width: 16px; 
+  height: 16px; 
+  background-image: url('./images/icon-search.png'); 
+  background-size: contain;
+  background-repeat: no-repeat; 
+  left: 25px; 
+  top: 50%; 
+  transform: translateY(-50%); 
 }
 
 .long-search-bar {
@@ -1393,7 +1360,7 @@ div.social {
 
 
 .icon-heart {
-  width: 22px; /* Adjust the size of the icon here */ 
+  width: 22px;  
   height: 22px;
 }
 
@@ -1499,8 +1466,8 @@ div.social {
 }
 
 .books-container2 {
-  max-width: 100%; /* Set a max-width to match the .container */
-  margin: 0 auto; /* Center the container horizontally */
+  max-width: 100%; 
+  margin: 0 auto; 
   -ms-overflow-style: none;
   padding-top: 2px;
   background-image: url('./images/bg-slides.png');
@@ -1542,8 +1509,8 @@ div.social {
 .cart-listing {
   background-color: #F9F7F0;
   display: flex;
-  justify-content: space-between; /* Distributes the columns evenly */
-  padding: 0 80px 0 80px; /* Adds space between the columns and the parent div */
+  justify-content: space-between; 
+  padding: 0 80px 0 80px; 
   border-radius: 4px;
 }
 
@@ -1723,7 +1690,7 @@ h9 {
   margin-top: 3px;
 }
 
-/* Checkout process starts here --------------------*/
+/* Checkout process starts here */
 #checkout-page {
   background-color: #F9F7F0;
 }
@@ -1756,8 +1723,6 @@ h9 {
 .order-summary {
   width: 40%;
 }
-
-/* User-checkout styles */
 
 .shipping-icon {
   display: block;
@@ -1812,7 +1777,7 @@ h9 {
 }
 
 .checkout-gap {
-  height: 110px; /* Adjust the size of the gap as needed */
+  height: 110px; 
 }
 
 .actions {
@@ -2024,7 +1989,6 @@ hr.checkout-line {
   width: 50%;
 }
 
-/* Expiration date input and CVC input row styles */
 .card-input-row {
   display: flex;
   justify-content: space-between;
@@ -2039,7 +2003,6 @@ hr.checkout-line {
 
 .day-input,
 .month-input {
-  /* Adjust the width as needed */
   width: 30%;
   background-color: #eee6d1;
   border: none;
@@ -2058,7 +2021,6 @@ hr.checkout-line {
 }
 
 .cvc-input {
-  /* Adjust the width as needed */
   width: 100%;
   background-color: #eee6d1;
   border: none;
@@ -2068,7 +2030,7 @@ hr.checkout-line {
   padding-left: 10px;
 }
 
-/*Order Confirmation page here wooooooo */
+/*Order Confirmation css*/
 .cart-order-summary {
   width: 40%;
   margin: 0 auto;
@@ -2143,5 +2105,4 @@ hr.checkout-line {
   width: 24px;
   height: 24px;
   margin-right: 8px;
-  /* Add any other styles you want to apply to the icons */
 }
