@@ -80,8 +80,7 @@ html {
 
 @media screen and (max-width: 768px) {
   .logo {
-    display: none; /* Hide the logo text on mobile devices */
-  }
+    display: none; 
 
   .logo-text {
     height: 80px;
@@ -101,16 +100,16 @@ html {
 
 .search-bar {
   width: 100%;
-  padding-right: 40px; /* Adjust the padding to accommodate the image size */
+  padding-right: 40px; 
   box-sizing: border-box;
 }
  
 .search-icon {
   position: absolute;
-  right: 9px; /* Adjust this value to set the distance from the right side of the search bar */
-  top: 3px; /* Padding above the image */
-  bottom: 3px; /* Padding below the image */
-  height: calc(100% - 6px); /* Adjust the height to match image size and accommodate the padding */
+  right: 9px; 
+  top: 3px;
+  bottom: 3px; 
+  height: calc(100% - 6px); 
   width: auto;
   cursor: pointer;
 }
@@ -638,8 +637,20 @@ hr {
   font-family: 'Alegreya Sans', sans-serif;
   font-weight: 400;
   font-size: 9pt;
+  color: #0F3F3F;
+}
+.book-cost {
+  font-family: 'Cardo', serif;
+  text-align: center;
+  font-weight: 700;
+  color: #0F3F3F;
+  margin-top: 3px;
 }
 
+.book-cost small {
+  font-size: 7pt; /* Set the size you want for the currency */
+  font-weight: normal; /* Reset the font-weight for the currency */
+}
 
 .breif-desc {
     margin-top: 5px;
@@ -1189,7 +1200,6 @@ div.social {
   cursor: pointer;
   border: none;
 }
-
 .text-section {
   width: 50%;
   display: flex;
@@ -1218,6 +1228,10 @@ div.social {
   padding-right: 65px;
   border-radius: 10px;
   cursor: pointer;
+  color: white;
+  font-family: 'Cardo', serif; 
+  font-weight: bold;
+  font-size: 13pt;
 }
 .wishlist-button {
   background-color: #f3efe1;
@@ -1231,16 +1245,51 @@ div.social {
   justify-content: center;
   gap: 5px;
   cursor: pointer;
+  font-family: 'Cardo', serif;
+  font-weight: bold; 
+  font-size: 13pt;
 }
 
 .large-text {
-  font-size: 24px;
-  text-align: center;
+  font-family: 'Cardo', serif;
+}
+
+.hardcover-text {
+  font-size: 12pt; 
+  margin-left: 150px;
+}
+
+.price-type {
+  font-size: 12pt; 
+}
+
+.price-text {
+  font-size: 28pt; 
+  text-shadow: 1px 1px 0px #EEE6D1; 
+  margin-left: 175px;
+  font-weight: 700;
+}
+.italic-text {
+  font-style: italic;
+}
+.review-text {
+  font-weight: bold;
+  margin-left: 8px;
+  font-size: 10pt;
 }
 .bottom-buttons {
   display: flex;
   gap: 15px;
   justify-content: center;
+}
+.bold-text {
+  font-weight: bold;
+}
+.product-field {
+  margin-left: -60px;
+  font-size: larger;
+  color: #0F3F3F;
+  font-weight: bolder;
 }
 
 .popup {
@@ -1252,6 +1301,13 @@ div.social {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 10;
+}
+
+.popup-title {
+  font-weight: bold;
+  margin-top: 15px;
+  word-spacing: 4px;
+  font-size: 14pt;
 }
 
 .popup-content {
@@ -1302,8 +1358,8 @@ div.social {
 
 .popup-text {
   margin: 0;
-  text-align: center;
-  padding-left: 27px;
+  text-align: left;
+  padding-left: 22px;
   padding-right: 27px;
 }
 
@@ -1377,6 +1433,7 @@ div.social {
 
 .product-page-author {
   font-size: 20px;
+  margin-bottom: -10px;
 }
 
 .product-page-title {
@@ -1529,13 +1586,10 @@ div.social {
 .total {
   text-align: center;
   background-color: #F9F7F0;
-  padding-top: 16px;
+  padding-top: 10px;
+  margin-left: 25px;
 }
 
-.total p {
-  font-size: 24px;
-  margin-top: 5px;
-}
 
 .cart-column {
   display: block;
@@ -1553,15 +1607,26 @@ div.social {
 }
 
 .column-2 {
-  font-family: cardo;
-  width: 20%;
+  width: 30%;
+}
+.bold-heading {
+  font-weight: bold;
+  font-size: 18pt;
+}
+.grey-text {
+  color: gray;
+  font-family: 'Cardo', serif; 
+  font-weight: lighter;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  font-size: 12pt;
 }
 
 .column-3 {
-  font-family: cardo;
   text-align: right;
-  width: 60%
+  width: 50%
 }
+
 
 .crossed-out {
   text-decoration: line-through;
@@ -1569,6 +1634,13 @@ div.social {
 
 h8 {
   font-size: 26px;
+  font-family: 'Cardo', serif; 
+}
+
+h9 {
+  font-size: 26px;
+  font-family: 'Cardo', serif; 
+  font-weight: bolder;
 }
 
 .quantity-control {
@@ -1634,15 +1706,21 @@ h8 {
   object-fit: cover;
 }
 
+.rec-product p {
+  font-family: 'Alegreya Sans', sans-serif;
+  margin-top: -8px;
+  margin-bottom: 2px;
+}
+
 .add-to-cart {
   background-color: #0f3f3f;
   color: white;
   padding: 5px 25px;
-  margin-top: 5px;
-  font-weight: bold;
+  font-family: 'Cardo', serif; 
   border: none;
-  border-radius: 2px;
+  border-radius: 3px;
   cursor: pointer;
+  margin-top: 3px;
 }
 
 /* Checkout process starts here --------------------*/
@@ -1797,6 +1875,8 @@ hr.checkout-line {
 .item-title,
 .item-price {
   margin: 0;
+  font-family: 'Cardo', serif; 
+  font-weight: 700;
 }
 
 .item-quantity {
@@ -1861,6 +1941,7 @@ hr.checkout-line {
 .summary-checkout-text2 {
   width: 30%;
   padding: 0.5rem 0;
+  font-family: 'Cardo', serif; 
 }
 
 .summary-checkout-text1 p {
@@ -2019,6 +2100,11 @@ hr.checkout-line {
   margin: 0;
 }
 
+.column-bold {
+  margin: 0;
+  font-weight: bold;
+}
+
 .column-link a {
   text-decoration: underline;
   color: inherit;
@@ -2030,8 +2116,9 @@ hr.checkout-line {
   text-decoration: none;
   background-color: #0F3F3F;
   color: white;
+  border-radius: 4px;
   border: none;
-  margin-top: 20px;
+  margin-top: 15px;
   margin-left: 50%;
   transform: translateX(-50%);
 }
